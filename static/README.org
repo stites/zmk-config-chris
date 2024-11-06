@@ -1,0 +1,1 @@
+./zmk-viewer-v2.0.0-linux-amd64 generate -f ../config/corneish_zen.keymap crkbd/rev1 
