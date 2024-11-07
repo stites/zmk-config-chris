@@ -1,13 +1,25 @@
 manifest:
   remotes:
+    - name: upstream
+      url-base: https://github.com/zmkfirmware
+    - name: LOWPROKB
+      url-base: https://github.com/LOWPROKB
+    - name: stites
+      url-base: https://github.com/stites
+    - name: dnaq
+      url-base: https://github.com/dnaq
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
     # Additional modules containing boards/shields/custom code can be listed here as well
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
   projects:
     - name: zmk
-      remote: zmkfirmware
-      revision: main
+      remote: stites
+      revision: main+zen-v1+plover
       import: app/west.yml
+  #   - name: zmk
+  #     remote: zmkfirmware
+  #     revision: main
+  #     import: app/west.yml
   self:
     path: config
