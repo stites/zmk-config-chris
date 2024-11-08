@@ -13,13 +13,13 @@ manifest:
     # Additional modules containing boards/shields/custom code can be listed here as well
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
   projects:
-    - name: zmk
-      remote: stites
-      revision: main+zen-v1+plover
-      import: app/west.yml
   #   - name: zmk
-  #     remote: zmkfirmware
-  #     revision: main
+  #     remote: stites
+  #     revision: main+zen-v1+plover
   #     import: app/west.yml
+    - name: zmk
+      remote: zmkfirmware
+      revision: main
+      import: app/west.yml
   self:
     path: config
