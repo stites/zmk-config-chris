@@ -17,7 +17,7 @@
 
 / {
     chosen {
-        zmk,matrix_transform = &five_column_transform; // default for 3x6, five_column for 3x5
+        zmk,physical-layout = &foostan_corne_5col_layout;
     };
 };
 
@@ -38,7 +38,7 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            label = "QWERTY";
+            display-name = "QWERTY";
 // .---------------------------------------------------------------.        .--------------------------------------------------------.
 // |  Q        |  W        |  E        |  R        |  T            |        |  Y       |  U        |  I        |  O       |  P       |
 // |  A (GUI)  |  S (ALT)  |  D (CTRL) |  F (SHFT) |  G            |        |  H       |  J (SHFT) |  K (CTRL) |  L (ALT) |  ; (GUI) |
@@ -55,7 +55,7 @@
         };
 
         numsym_layer {
-            label = "#+|";
+            display-name = "#+|";
 // .-----------------------------.   .-----------------------------.
 // |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  |
 // | GUI | ALT | CTRL| SHFT| TAB |   |     | SHFT|  [  |  ]  |  `  |
@@ -72,7 +72,7 @@
         };
 
         function_layer {
-            label = "Fn keys";
+            display-name = "Fn keys";
 // .-----------------------------.   .-----------------------------.
 // | F1  | F2  | F3  | F4  | F5  |   | F6  | F7  | F8  | F9  | F0  |
 // | F11 | F12 | F13 | F14 | F15 |   | F16 | F17 | F18 | F19 | F20 |
@@ -89,7 +89,7 @@
         };
 
         navigation_layer {
-            label = "  Nav";
+            display-name = "  Nav";
 // .-----------------------------.   .-----------------------------.
 // |     |     |     |     |     |   | REDO| PAST| COPY| CUT | UNDO|
 // |     |     |     |     |     |   |     | LEFT| DOWN| UP  |RIGHT|
@@ -106,7 +106,7 @@
         };
 
         media_layer {
-            label = "  ⚙";
+            display-name = "Settings"; // configuration layer
 //  Bluetooth side:                   Media controls (tries to mirror nav layer)
 //    - choose profile 1-5               - clear (actually not sure what this is)
 //    - clear a profile with CLR_P       - prev / next (for songs)
