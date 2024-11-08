@@ -19,14 +19,13 @@
 ---
 include:
   - board: corneish_zen_v2_left
-    shield: settings_reset
-    cmake-args: -DCONFIG_ZMK_DISPLAY=n
-    # https://zmk.dev/docs/development/usb-logging
-    #snippet: zmk-usb-logging
     # https://zmk.dev/docs/troubleshooting/connection-issues#split-keyboard-halves-unable-to-pair
-    # shield: settings_reset
+    ## shield: settings_reset
+    ## cmake-args: -DCONFIG_ZMK_DISPLAY=n
+    # https://zmk.dev/docs/development/usb-logging
+    snippet: zmk-usb-logging
+
   - board: corneish_zen_v2_right
-    #snippet: zmk-usb-logging
-    # shield: settings_reset
-    shield: settings_reset
-    cmake-args: -DCONFIG_ZMK_DISPLAY=n
+    snippet: zmk-usb-logging
+    ##shield: settings_reset
+    ##cmake-args: -DCONFIG_ZMK_DISPLAY=n
