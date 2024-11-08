@@ -19,6 +19,11 @@
 ---
 include:
   - board: corneish_zen_v2_left
-    shield: settings_reset
+
+    # https://zmk.dev/docs/development/usb-logging
+    snippet: zmk-usb-logging
+    # https://zmk.dev/docs/troubleshooting/connection-issues#split-keyboard-halves-unable-to-pair
+    # shield: settings_reset
   - board: corneish_zen_v2_right
-    shield: settings_reset
+    snippet: zmk-usb-logging
+    # shield: settings_reset
